@@ -1,0 +1,78 @@
+body {
+  background: lightgrey;
+  color: grey;
+}
+
+.jumbotron {
+  background: url(https://images.unsplash.com/photo-1563164232-b6ee5dd3e821?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9);
+  background-position: center;
+  background-size: cover;
+  transform: translateY(-100px) skewY(-10deg);
+}
+
+.profile-name {
+  text-align: center;
+  padding: 30vh 0;
+  transform: skewY(10deg);
+  color: white;
+}
+
+.banner {
+  background: #e8e8e8;
+  height: 400px;
+  transform: translateY(-100px) skewY(-10deg);
+}
+
+.self-intro {
+  padding: 10vh 0;
+  transform: skewY(10deg);
+}
+.self-intro h2{
+  font-weight: 300;
+}
+
+.self-intro p{
+  font-weight: 200;
+}
+.rotate-img {
+  width: 100px;
+  height: 100px;
+  animation: rotation 12s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+#projects {
+  margin-top: 200px;
+}
+#projects h2{
+  font-weight: 300;
+}
+footer {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  font-size: 15px;
+
+}
+footer a {
+  font-size: 30px;
+  color: grey;
+}
+@media (max-width: 768px) {
+  .profile-name h2 {
+    font-weight: 300;
+    font-size: 2rem;
+  }
+  .profile-name p {
+    font-weight: 200;
+    font-size: 1rem;
+  }
+}
